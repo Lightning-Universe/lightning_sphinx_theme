@@ -2,6 +2,7 @@
 
 From https://github.com/shiftlab/lightning_sphinx_theme.
 """
+
 from os import path
 
 __version__ = "0.0.31"
