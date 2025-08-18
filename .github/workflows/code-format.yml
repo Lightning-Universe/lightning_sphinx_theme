@@ -9,7 +9,7 @@ on:  # Trigger the workflow on push or pull request, but only for the main branc
 jobs:
 
   pre-commit-check:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
         # for private repo - first is the checkout step, which needs to use unlimited fetch depth for pushing

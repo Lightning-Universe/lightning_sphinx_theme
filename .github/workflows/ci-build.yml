@@ -9,7 +9,7 @@ on:  # Trigger the workflow on push or pull request, but only for the main branc
 jobs:
 
   build-python:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
@@ -17,7 +17,7 @@ jobs:
         run: python setup.py install --dry-run --user
 
   build-node:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - name: Use Node.js
