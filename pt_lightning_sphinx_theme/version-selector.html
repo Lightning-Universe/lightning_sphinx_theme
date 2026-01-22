@@ -1,0 +1,82 @@
+<div class="rst-version-select mb-4" data-toggle="rst-version-select" role="note" aria-label="version-select">
+  <span class="rst-current-version d-flex align-items-center" data-toggle="rst-current-version">
+    <label for="version-select" class="mb-0">Version:</label>
+    <select name="version-select" id="version-select" class="px-1 ml-2" onchange="if (this.value) selectVersion(this.value)">
+      <optgroup label="2.0" id="optgroup-2.0"><option value="2.0.4" data-date="06/22/2023">2.0.4</option><option value="2.0.3" data-date="06/07/2023">2.0.3</option><option value="2.0.2" data-date="04/24/2023">2.0.2</option></optgroup><optgroup label="1.9" id="optgroup-1.9"><option value="1.9.4" data-date="03/01/2023">1.9.4</option><option value="1.9.3" data-date="02/21/2023">1.9.3</option><option value="1.9.2" data-date="02/15/2023">1.9.2</option><option value="1.9.1" data-date="02/10/2023">1.9.1</option><option value="1.9.0" data-date="01/17/2023">1.9.0</option></optgroup><optgroup label="1.8" id="optgroup-1.8"><option value="1.8.6" data-date="12/21/2022">1.8.6</option><option value="1.8.5" data-date="12/15/2022">1.8.5</option><option value="1.8.4" data-date="12/08/2022">1.8.4</option><option value="1.8.3" data-date="11/23/2022">1.8.3</option><option value="1.8.2" data-date="11/18/2022">1.8.2</option><option value="1.8.1" data-date="11/10/2022">1.8.1</option><option value="1.8.0" data-date="11/01/2022">1.8.0</option></optgroup><optgroup label="1.7" id="optgroup-1.7"><option value="1.7.7" data-date="09/22/2022">1.7.7</option><option value="1.7.6" data-date="09/13/2022">1.7.6</option><option value="1.7.5" data-date="09/07/2022">1.7.5</option><option value="1.7.4" data-date="08/31/2022">1.7.4</option><option value="1.7.3" data-date="08/25/2022">1.7.3</option><option value="1.7.2" data-date="08/17/2022">1.7.2</option><option value="1.7.1" data-date="08/09/2022">1.7.1</option><option value="1.7.0" data-date="08/02/2022">1.7.0</option></optgroup><optgroup label="1.6" id="optgroup-1.6"><option value="1.6.5" data-date="07/13/2022">1.6.5</option><option value="1.6.4" data-date="06/01/2022">1.6.4</option><option value="1.6.3" data-date="05/03/2022">1.6.3</option><option value="1.6.2" data-date="04/27/2022">1.6.2</option><option value="1.6.1" data-date="04/13/2022">1.6.1</option><option value="1.6.0" data-date="03/29/2022">1.6.0</option></optgroup><optgroup label="1.5" id="optgroup-1.5"><option value="1.5.10" data-date="02/09/2022">1.5.10</option><option value="1.5.9" data-date="01/20/2022">1.5.9</option><option value="1.5.8" data-date="01/05/2022">1.5.8</option><option value="1.5.7" data-date="12/21/2021">1.5.7</option><option value="1.5.6" data-date="12/15/2021">1.5.6</option><option value="1.5.5" data-date="12/07/2021">1.5.5</option><option value="1.5.4" data-date="11/30/2021">1.5.4</option><option value="1.5.3" data-date="11/24/2021">1.5.3</option><option value="1.5.2" data-date="11/16/2021">1.5.2</option><option value="1.5.1" data-date="11/09/2021">1.5.1</option><option value="1.5.0" data-date="11/02/2021">1.5.0</option></optgroup><optgroup label="1.4" id="optgroup-1.4"><option value="1.4.9" data-date="09/30/2021">1.4.9</option><option value="1.4.8" data-date="09/22/2021">1.4.8</option><option value="1.4.7" data-date="09/15/2021">1.4.7</option><option value="1.4.6" data-date="09/10/2021">1.4.6</option><option value="1.4.5" data-date="09/01/2021">1.4.5</option><option value="1.4.4" data-date="08/24/2021">1.4.4</option><option value="1.4.3" data-date="08/23/2021">1.4.3</option><option value="1.4.2" data-date="08/11/2021">1.4.2</option><option value="1.4.1" data-date="08/03/2021">1.4.1</option><option value="1.4.0" data-date="07/27/2021">1.4.0</option></optgroup><optgroup label="1.3" id="optgroup-1.3"><option value="1.3.8" data-date="07/01/2021">1.3.8</option><option value="1.3.7" data-date="06/22/2021">1.3.7</option><option value="1.3.6" data-date="06/17/2021">1.3.6</option><option value="1.3.5" data-date="06/09/2021">1.3.5</option><option value="1.3.4" data-date="06/03/2021">1.3.4</option><option value="1.3.3" data-date="05/26/2021">1.3.3</option><option value="1.3.2" data-date="05/19/2021">1.3.2</option><option value="1.3.1" data-date="05/11/2021">1.3.1</option><option value="1.3.0" data-date="05/06/2021">1.3.0</option></optgroup><optgroup label="1.2" id="optgroup-1.2"><option value="1.2.10" data-date="04/23/2021">1.2.10</option><option value="1.2.9" data-date="04/22/2021">1.2.9</option><option value="1.2.8" data-date="04/14/2021">1.2.8</option><option value="1.2.7" data-date="04/07/2021">1.2.7</option><option value="1.2.6" data-date="03/30/2021">1.2.6</option><option value="1.2.5" data-date="03/24/2021">1.2.5</option><option value="1.2.4" data-date="03/16/2021">1.2.4</option><option value="1.2.3" data-date="03/09/2021">1.2.3</option><option value="1.2.2" data-date="03/05/2021">1.2.2</option><option value="1.2.1" data-date="02/24/2021">1.2.1</option><option value="1.2.0" data-date="02/18/2021">1.2.0</option></optgroup><optgroup label="1.1" id="optgroup-1.1"><option value="1.1.8" data-date="02/08/2021">1.1.8</option><option value="1.1.7" data-date="02/03/2021">1.1.7</option><option value="1.1.6" data-date="01/26/2021">1.1.6</option><option value="1.1.5" data-date="01/21/2021">1.1.5</option><option value="1.1.4" data-date="01/12/2021">1.1.4</option><option value="1.1.3" data-date="01/06/2021">1.1.3</option><option value="1.1.2" data-date="12/23/2020">1.1.2</option><option value="1.1.1" data-date="12/15/2020">1.1.1</option><option value="1.1.0" data-date="12/10/2020">1.1.0</option></optgroup><optgroup label="1.0" id="optgroup-1.0"><option value="1.0.8" data-date="11/24/2020">1.0.8</option><option value="1.0.7" data-date="11/17/2020">1.0.7</option><option value="1.0.6" data-date="11/11/2020">1.0.6</option><option value="1.0.5" data-date="11/04/2020">1.0.5</option></optgroup></select>
+    <strong id="selected-date"></strong>
+  </span>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css" integrity="sha512-0nkKORjFgcyxv3HbE4rzFUlENUMNqic/EzDIeYCgsKa/nwqr2B91Vu/tNAu4Q0cBuG4Xe/D1f/freEci/7GDRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+
+function defer(method) {
+    if (window.jQuery) {
+        method();
+    } else {
+        setTimeout(function() { defer(method) }, 50);
+    }
+}
+
+defer(function () {
+    $.getScript( "https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js", function( data, textStatus, jqxhr ) {
+      $("#version-select").chosen();
+      $("#version-select").addClass("loaded");
+    });
+});
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Make sure the correct version is selected on page load, default is latest
+    loadVersion();
+  }, false);
+
+  function loadVersion(){
+    let selector = document.getElementById('version-select');
+    selector.querySelectorAll("option").forEach(option => {
+      if (window.location.href.includes(option.value)){
+        selector.value = option.value;
+      }
+    });
+  };
+
+
+
+  // Get the selected version, get current version from page url, then replace and redirect to the correct page
+
+  function selectVersion(value){
+    let newPath = "";
+    let pageUrl = window.location.href;
+    let currentVersion = "";
+    let selector = document.getElementById('version-select');
+    let selectedDate = selector.options[selector.selectedIndex].getAttribute("data-date");
+    document.getElementById("selected-date").innerHTML = selectedDate;
+    selector.querySelectorAll("option").forEach(option => {
+      if (pageUrl.includes(option.value)){
+        currentVersion = option.value;
+        newPath = pageUrl.replace(option.value, value);
+        UrlExists(newPath, value, value);
+      }
+      if (pageUrl.includes('stable')){
+        newPath = pageUrl.replace('stable', value);
+        UrlExists(newPath, value, value);
+      }
+    });
+  }
+
+  // Check to be sure page exists, if not open in new tab at base version url
+
+  function UrlExists(newPath, currentVersion, value) {
+        var http = new XMLHttpRequest();
+        http.open('HEAD', newPath, false);
+        http.send();
+        if (http.status != 404){
+          window.location.href=newPath;
+        }
+        else{
+          window.open(newPath.split(currentVersion)[0] + value, '_blank');
+        }
+    }
+</script>

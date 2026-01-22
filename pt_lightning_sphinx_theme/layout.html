@@ -224,13 +224,13 @@
                 {%- set nav_version = current_version %}
               {% endif %}
               {% if nav_version %}
-                <div class="version">
-                  {{ nav_version }}
-                </div>
+              {% include "version-selector.html" %}
               {% endif %}
             {% endif %}
 
             {% include "searchbox.html" %}
+
+
 
             {% endblock %}
           </div>
